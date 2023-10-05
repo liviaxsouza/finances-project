@@ -1,0 +1,69 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    /* Adicionei scroll para o conteúdo */
+    border-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.registrosreceitastitle,
+.registrosdespesastitle {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.registrosreceitaslist,
+.registrosdespesaslist {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.registrosreceitasitem,
+.registrosdespesasitem {
+    flex-direction: column;
+    /* Empilhar itens na vertical */
+    width: 100%;
+    padding: 1rem;
+    /* Aumentado o espaçamento interno */
+}
+
+.registrosreceitasitemvalue {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.registrosreceitasitemvalue,
+.registrosdespesasitemvalue {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    /* Espaçamento superior entre valor e descrição */
+}
+
+.actionsbutton {
+    background-color: #f1f1f1; /* Cor de fundo mais clara */
+    color: #333; /* Cor do texto mais escura */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem; /* Espaçamento menor dentro do botão */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .actionsbutton:hover {
+    background-color: #c9c9c9; /* Cor de fundo mais clara */
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
